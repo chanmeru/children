@@ -215,10 +215,6 @@ footer .sns .contact {
 }
 @media (max-width: 490px) {
   /* リスト */
-  .cp__cont{
-    display: none !important;
-  }
- 
   .list{
     width: 98%;
     padding-bottom: 100px;
@@ -303,13 +299,6 @@ footer .sns .contact {
   .cp_offcm02 {
     height: 100%;
     display: none;
-  }
-  .cp_toggle02{
-    display: none;
-  }
-  
-  .cp_offcm02 {
-    height: 100%;
   }
    /* リスト */
   .list{
