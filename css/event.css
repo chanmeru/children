@@ -1,0 +1,494 @@
+header,body,footer{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ; 
+}
+body{
+  text-align: left !important;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/* ヘッダー */
+*:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.cp_cont {
+  height: 65vh;
+}
+/* menu */
+.cp_offcm02 {
+  position: relative;
+  z-index: 5;
+  left: 0;
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+  text-align: center;
+  opacity: 1;
+}
+.cp_offcm02 nav {
+  background: rgba(90, 88, 88, 0.95);
+}
+.cp_offcm02 nav, .cp_offcm02 ul {
+  height: 100%;
+}
+.cp_offcm02 li {
+  display: inline-block;
+  margin-right: -6px;
+  border: none;
+  color: #ffffff;
+}
+.cp_offcm02 a {
+  display: block;
+  padding: 12px 45px;
+  -webkit-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+}
+.cp_offcm02 a:hover {
+  background-color: rgb(0, 0, 0 ,0.2);
+}
+/* menu toggle */
+#cp_toggle02 {
+  display: none;
+}
+.cp_mobilebar {
+  display: none;
+}
+/* content */
+.cp_container {
+  position: relative;
+  top: 0px;
+  margin-top: 0;
+  padding: 35px auto;
+  -webkit-transition: transform .3s ease-in;
+  transition: transform .3s ease-in;
+}
+.cp_content {
+  margin: 0 auto;
+  padding: 20px;
+  height: 65vh;
+  text-align: center;
+}
+/* イベント */
+.event{
+  width: 80%;
+  margin:0 auto;
+  text-align: left;
+}
+/* イベント'p' */
+.event__content{
+  text-align: left;
+}
+/* イベントh2 */
+.event__about{
+  text-align: left;
+  border-left:10px solid rgb(88, 243, 235);
+  padding-left: 20px;
+}
+  /* イベントh1 */
+.event__title{
+  color:rgb(230, 112, 117);
+  font-size: 45px;
+  font-family: Century ;
+  margin-top: -130px;
+  margin-bottom: 15%;
+}
+.event__indent{
+  text-indent: 1em;
+}
+/* テーブル */
+.event__table th{
+  border:brown;
+}
+table{
+  width: 90%;
+  margin:0 auto;
+  border-collapse: collapse;
+  margin-top:40px;
+}
+table tr{
+  border-bottom: solid 2px white;
+}
+table tr:last-child{
+  border-bottom: none;
+}
+table th{
+  position: relative;
+  text-align: left;
+  width: 30%;
+  background-color: #52c2d0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+table td{
+  width: 90%;
+  text-align: left;
+  background-color: #eee;
+  padding: 10px 0;
+  padding-left:5%;
+}
+.event__box{
+    border-right: 2px solid white;
+}
+/* 上の写真 */
+.top-image img{
+  width: 30%;
+  height:40%;
+  opacity: 0.2;
+  margin: 0 0 0 70%;
+  display: inline-block;
+}
+/* 間の写真 */
+.between-image img{
+  width: 100%;
+  height:360px;
+  opacity: .3;
+}
+  /* 申し込みボタン */
+.container {
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom:40px;
+  margin-bottom: 30px;
+}
+.btn-animation-02 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #eca12fef;
+  border: 2px solid #eca12fef;
+  font-size: 16px;
+  color: #eca12fef;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  position: relative;
+}
+.btn-animation-02 span {
+  position: relative;
+  z-index: 1;
+}
+.btn-animation-02::before,
+.btn-animation-02::after {
+  content: "";
+  display: block;
+  background-color: #FFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+}
+.btn-animation-02::before {
+  left: 0;
+}
+.btn-animation-02::after {
+  right: 0;
+}
+
+.btn-animation-02:hover:before,
+.btn-animation-02:hover:after {
+  width: 0;
+  background-color: #FFF;
+}
+
+.btn-animation-02:hover {
+  color:#FFF;
+}
+  /* 透明ボタン */
+.topRight-img img{
+  width: 20%;
+  height:30%;
+  opacity: 0.2;
+  margin: -90% 0 -10% 60%;
+}
+.topLeft-img img{
+  width: 20%;
+  height:40%;
+  opacity: 0.2;
+  margin: 0 0 -5% 0%;
+}
+/* ballschule タイトル */
+.balls-title{
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+/* footer */
+footer{
+  background-color:rgba(90, 88, 88, 0.95);
+  width: 100%;
+  height:60px;
+	position: fixed;
+	bottom: 0;
+	display: inline-block;
+	margin: 0;
+  box-shadow: 0 -3px 3px 0 rgba(0,0,0,0.2);
+}
+footer .copyright {
+	float: left;
+	width: 60%;
+}
+footer .copyright p {
+	font-size: 0.7em;
+	line-height: 45px;
+	padding-left: 10%;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+footer .sns {
+	float: right;
+	width: 40%;
+}
+footer .sns a {
+	width: 25%;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 60px;
+	float: left;
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+footer .sns a:hover {
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	background-color: #222222;
+}
+footer .sns .insta {
+	background-color: #e4405f;
+}
+footer .sns .fb {
+	background-color: #3b5999;
+}
+footer .sns .tw {
+	background-color: #55acee;
+}
+footer .sns .contact {
+	background-color: #26C6DA;
+}
+@media (max-width: 480px) {
+	.contents {
+		margin-bottom: 200px;
+	}
+	footer {
+		height: auto;
+	}
+	footer .copyright {
+		width: 100%;
+	}
+	footer .copyright p {
+		padding: 0;
+		text-align: center;
+	}
+	footer .sns {
+		width: 100%;
+  }
+  /* 間の写真 */
+  .between-image img{
+    height:180px;
+    opacity: 0.1;
+  }
+  /* イベントh1 */
+  .event__title{
+    font-size: 16px;
+    margin-top: -90px;
+  }
+  /* イベントh2 */
+  .event__about{
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  /* 申し込みボタン */
+  .btn-animation-02 {
+    font-size: 14px;
+  }
+  
+   /* 透明ボタン */
+  .topRight-img img{
+    width: 60%;
+    opacity: 0.2;
+    margin: -90% 0 -10% 60%;
+    
+  }
+  .topLeft-img img{
+    width: 60%;
+    opacity: 0.2;
+    margin: 0;
+  }
+  /* ballschule タイトル */
+  .balls-title{
+    margin-top: 30px;
+  }
+  /* テーブル */
+  table td{
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  /* menu */
+  .cp_offcm02 {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 60px;
+    -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in 0.3s;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in 0.3s;
+    opacity: 0;
+    background-color: rgba(51,51,51,0.95);
+  }
+  .cp_offcm02 nav {
+    background: rgb(214, 198, 209);
+  }
+  .cp_offcm02 li {
+    display: block;
+    color: rgb(245, 243, 243 0.5);
+    border-bottom: 1px solid rgba(51,51,51,0.95);
+  }
+  .cp_offcm02 a {
+    padding: 1.2em;
+  }
+
+  .cp_offcm02 a:hover {
+    background-color: rgb(0, 0, 0 ,0.2);
+  }
+  .cp_mobilebar {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 25px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(90, 88, 88, 0.95);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .cp_menuicon {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 100%;
+    cursor: pointer;
+    -webkit-transition: transform .3s ease-in;
+    transition: transform .3s ease-in;
+  }
+  .cp_menuicon > span {
+    display: block;
+    position: absolute;
+    top: 55%;
+    margin-top: -0.3em;
+    width: 100%;
+    height: 0.2em;
+    border-radius: 1px;
+    background-color: #eeeeee;
+    -webkit-transition: transform .3s ease-in;
+    transition: transform .3s ease-in;
+  }
+  .cp_menuicon > span:before, .cp_menuicon > span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    background-color: #eeeeee;
+    -webkit-transition: transform .3s ease;
+    transition: transform .3s ease;
+  }
+  .cp_menuicon > span:before {
+    -webkit-transform: translateY(-0.6em);
+    transform: translateY(-0.6em);
+  }
+  .cp_menuicon > span:after {
+    -webkit-transform: translateY(0.6em);
+    transform: translateY(0.6em);
+  }
+  #cp_toggle02:checked + .cp_mobilebar .cp_menuicon {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #cp_toggle02:checked + .cp_mobilebar span:before,
+  #cp_toggle02:checked + .cp_mobilebar span:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  #cp_toggle02:checked ~ .cp_offcm02 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  /* content */
+  .cp_container {
+    top:60px;
+  }
+  .between-image img{
+    height:180px;
+  }
+  /* イベントh1 */
+  .event__title{
+    font-size:35px;
+    margin-top:-40px;
+  }
+  /* ballschule タイトル */
+  .balls-title{
+    margin-top: 30px;
+  }
+  /* イベントh2 */
+  .event__about{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  /* 上の写真 */
+  .top-image img{
+    opacity: 0.3;
+  }
+  /* 透明ボタン */
+  .topRight-img img{
+    width: 30%;
+    opacity: 0.3;
+    margin: -120% 0 -10% 60%;
+    height:20%;
+  }
+  .topLeft-img img{
+    width: 30%;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    height: 20%;
+  }
+  /* テーブル */
+  table td{
+    font-size: 13px;
+  }
+  footer .contact{
+    font-size: 10px !important;
+  }
+}
