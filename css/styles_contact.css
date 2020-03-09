@@ -300,9 +300,14 @@ footer .sns .contact {
  
 }
 @media (max-width: 767px) {
-  cp_toggle02{
-     display: none ;
+  .cp_offcm02 {
+    height: 100%;
+    display: none;
   }
+  .cp_toggle02{
+    display: none;
+  }
+  
   .cp_offcm02 {
     height: 100%;
   }
