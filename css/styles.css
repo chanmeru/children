@@ -56,6 +56,11 @@ body{
     height: 65vh;
   }
   /* menu */
+ .nav_list{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
   .cp_offcm02 {
     position: relative;
     z-index: 5;
